@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EmuVR Posters</title>
+<style>
+  :root { --bg:#fafaf8; --fg:#1d1d1f; --muted:#5c5c63; --accent:#c8232c; --card:#ffffff; --line:#e4e4e7; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141416; --fg:#ededf0; --muted:#a1a1aa; --card:#1d1d21; --line:#2c2c33; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 20px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; } h2 { margin-top:2.2em; font-size:1.25rem; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 22px; }
+  a { color:var(--accent); } li { margin:.3em 0; } small { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>EmuVR Posters</h1>
+  <p class="sub">A personal, non-commercial companion app for the VR game EmuVR.</p>
+
+  <div class="card">
+    <p><strong>What it does:</strong> EmuVR Posters lets me sign in with my own Pinterest account and view my own boards
+    and pins inside EmuVR, a virtual-reality room that runs on my personal Windows PC. I pick images from my boards and
+    display them as wall posters in my virtual room.</p>
+    <p><strong>It is read-only.</strong> The app never creates, edits or deletes pins or boards, and it is used only by me.</p>
+  </div>
+
+  <h2 id="privacy">Privacy Policy</h2>
+  <p><small>Last updated: November 7, 2026</small></p>
+  <ul>
+    <li><strong>Data accessed:</strong> with my permission (Pinterest OAuth), the app reads my account name, my boards and the pins
+      in them (titles and image URLs). Scopes requested: <code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>.</li>
+    <li><strong>Where data is stored:</strong> only on my own computer. Images I choose as posters are saved as local files used by
+      EmuVR. The access token is stored locally and is never sent anywhere except to Pinterest's API.</li>
+    <li><strong>No sharing, no selling:</strong> no data is sent to any server owned by this app, no analytics, no advertising,
+      no third parties. There is no backend.</li>
+    <li><strong>Other users:</strong> the app is not distributed; it is used only by its author.</li>
+    <li><strong>Deleting data:</strong> disconnecting the app in EmuVR deletes the local token. Access can also be revoked at any
+      time from Pinterest (Settings &rarr; Security &rarr; Apps). Local poster images can be deleted from the EmuVR folder.</li>
+    <li><strong>Contact:</strong> please open an issue at
+      <a href="https://github.com/chirola30/emuvr-posters/issues">github.com/chirola30/emuvr-posters/issues</a>.</li>
+  </ul>
+</main>
+</body>
+</html>
